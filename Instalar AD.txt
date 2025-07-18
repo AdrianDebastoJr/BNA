@@ -1,0 +1,7 @@
+Add-WindowsCapability -Online -Name Rsat.ActiveDirectory.DS-LDS.Tools~~~~0.0.1.0
+DISM /Online /Add-Capability /CapabilityName:Rsat.ActiveDirectory.DS-LDS.Tools~~~~0.0.1.0
+
+Habilitarlo:
+Install-WindowsFeature -Name RSAT-ADDS-Tools
+
+DISM /Online /Add-ProvisionedAppxPackage /PackagePath:%DDD%Otros\5319275A.WhatsAppDesktop_2.2509.4.0_neutral_~_cv1g1gvanyjgm.msixbundle /SkipLicense
